@@ -30,23 +30,23 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, Bindable {
     */
     
     func bindViewModel() {
-        let input = SpendingLimitViewModel.Input(
+        let input = ___VARIABLE_productName___ViewModel.Input(
             
         )
         
         let output = viewModel.transform(input, disposeBag: disposeBag)
         
-        output.$cells.asDriver()
-            .drive(tableView.rx.items) { [weak self] tableView, row, cellType in
-                guard let strongSelf = self else {
-                    return UITableViewCell()
-                }
-                let indexPath = IndexPath(row: 0, section: row)
-                switch cellType {
-                
-                }
-            }
-            .disposed(by: disposeBag)
+//        output.$cells.asDriver()
+//            .drive(tableView.rx.items) { [weak self] tableView, row, cellType in
+//                guard let strongSelf = self else {
+//                    return UITableViewCell()
+//                }
+//                let indexPath = IndexPath(row: 0, section: row)
+//                switch cellType {
+//
+//                }
+//            }
+//            .disposed(by: disposeBag)
         
     }
 }
