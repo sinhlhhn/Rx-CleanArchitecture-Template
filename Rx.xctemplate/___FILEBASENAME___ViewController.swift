@@ -37,10 +37,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, Bindable {
         let output = viewModel.transform(input, disposeBag: disposeBag)
         
 //        output.$cells.asDriver()
-//            .drive(tableView.rx.items) { [weak self] tableView, row, cellType in
-//                guard let strongSelf = self else {
-//                    return UITableViewCell()
-//                }
+//            .drive(tableView.rx.items) { [unowned self] tableView, row, cellType in
 //                let indexPath = IndexPath(row: 0, section: row)
 //                switch cellType {
 //
